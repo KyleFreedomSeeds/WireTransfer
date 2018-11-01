@@ -14,7 +14,7 @@ try
     if (isNull objectFromNetId _netID) throw "Please select a player to send money to!";
 
     private _string = ctrlText _inputText;
-    if (_string == "" || {_string == "0"})) throw "Please enter an amount to send!";
+    if (_string == "" || {_string == "0"}) throw "Please enter an amount to send!";
 
     private _forbidden = [_string] call KBC_wire_fnc_stringCheck;
     if (_forbidden != -1) throw "You can only use numbers in the amount! No letters or symbols!";

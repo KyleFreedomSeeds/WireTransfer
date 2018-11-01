@@ -30,5 +30,5 @@ try
 }
 catch
 {
-    ["ErrorTitleAndText",["Wire Transfer", _exception]]call ExileClient_gui_toaster_addTemplateToast;
+    ["ErrorTitleAndText",["WireTransfer", _exception]]call ExileClient_gui_toaster_addTemplateToast;
 };

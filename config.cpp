@@ -1,10 +1,10 @@
 class CfgInteractionMenus
 {
-	 class Wire
+    class Wire: ExileAbstractAction
     {
         targetType = 2;
-        target = "CUP_p_fiberPlant_EP1";
-
+        target = "Exile_Locker";
+		 
         class Actions 
         {
             class WireTransfer: ExileAbstractAction

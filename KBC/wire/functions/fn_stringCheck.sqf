@@ -6,7 +6,7 @@ try
 {
     for "_i" from 0 to ((count _string) - 1) do
     {
-        private _character = _string select [_i, _i + 1];
+        private _character = _string select [_i, _i];
         if !(_character in _allowed) throw _i;
     };
 }

@@ -11,7 +11,7 @@ class CfgInteractionMenus
             {
                 title = "Wire Transfer";
                 condition = "ExilePlayerInSafezone";
-                action = "call wire_fnc_showDialog";
+                action = "call KBC_wire_fnc_showDialog";
             };
         };
     };

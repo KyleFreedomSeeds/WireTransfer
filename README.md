@@ -5,3 +5,6 @@ Installation
 - Simply drop the KBC folder into your mission root.
 - Ammend your files with the ones provided.
 - Note: If you drop the KBC folder somewhere besides mission root, be sure to change all of the paths that lead to certain files.
+
+GUI Preview:
+https://gyazo.com/5adab9f5e785a9105d0411d979ae0311

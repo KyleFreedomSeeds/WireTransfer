@@ -23,6 +23,7 @@ try
 	format["updateLocker:%1:%2", _newMoneyt, getPlayerUID _player] call ExileServer_system_database_query_fireAndForget;
 
     [_sessionID, "ToastRequest", ["SuccessTitleAndText", ["Wire Transfer", format["$%2 sent from your %3 to %1's bank!", name _target, _moneySent, ["wallet","bank"] select _locker]]]] call ExileServer_system_network_send_to;
+    [_target, "ToastRequest", ["SuccessTitleAndText", ["Wire Transfer", format["$%2 sent to your bank from %1!", name _player, _moneySent]]]] call ExileServer_system_network_send_to;
 }
 catch
 {

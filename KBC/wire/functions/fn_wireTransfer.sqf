@@ -24,7 +24,7 @@ try
     private _locker = cbChecked _targetCheck;
     private _number = parseNumber _string;
 
-    if (([_money, _lockerMoney] select _locker) < _number) throw format["You dont have enough money in your %1 to do that!", ["wallet, bank"] select _locker];
+    if (([_money, _lockerMoney] select _locker) < _number) throw format["You dont have enough money in your %1 to do that!", ["wallet", "bank"] select _locker];
 
     ["wireTransferRequest", [_netID, _number, _locker]] call ExileClient_system_network_send;
 }
